@@ -11,6 +11,14 @@ func main() {
 	runLesson("01", lessons.HelloWorld)
 	runLesson("02", lessons.Values)
 	runLesson("03", lessons.Variables)
+	runLesson("04", lessons.Constants)
+	runLesson("05", lessons.For)
+	runLesson("06", lessons.IfElse)
+	runLesson("07", lessons.Switch)
+	runLesson("08", lessons.Arrays)
+	runLesson("09", lessons.Slices)
+	runLesson("10", lessons.Maps)
+	runLesson("11", lessons.Range)
 }
 
 func runLesson(number string, call lesson_fn) {
