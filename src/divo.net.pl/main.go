@@ -8,26 +8,40 @@ import (
 type lesson_fn func()
 
 func main() {
-//	runLesson("01", lessons.HelloWorld)
-//	runLesson("02", lessons.Values)
-//	runLesson("03", lessons.Variables)
-//	runLesson("04", lessons.Constants)
-//	runLesson("05", lessons.For)
-//	runLesson("06", lessons.IfElse)
-//	runLesson("07", lessons.Switch)
-//	runLesson("08", lessons.Arrays)
-//	runLesson("09", lessons.Slices)
-//	runLesson("10", lessons.Maps)
-//	runLesson("11", lessons.Range)
-//	runLesson("12", lessons.Functions)
-//	runLesson("13", lessons.MultipleReturnValues)
-//	runLesson("14", lessons.VariadicFunctions)
-//	runLesson("15", lessons.Closures)
-//	runLesson("16", lessons.Recursion)
-//	runLesson("17", lessons.Pointers)
-//	runLesson("18", lessons.Structs)
-//	runLesson("19", lessons.Methods)
-	runLesson("20", lessons.Interfaces)
+	lessons := map[string]lesson_fn {
+		"01": lessons.HelloWorld,
+		"02": lessons.Values,
+		"03": lessons.Variables,
+		"04": lessons.Constants,
+		"05": lessons.For,
+		"06": lessons.IfElse,
+		"07": lessons.Switch,
+		"08": lessons.Arrays,
+		"09": lessons.Slices,
+		"10": lessons.Maps,
+		"11": lessons.Range,
+		"12": lessons.Functions,
+		"13": lessons.MultipleReturnValues,
+		"14": lessons.VariadicFunctions,
+		"15": lessons.Closures,
+		"16": lessons.Recursion,
+		"17": lessons.Pointers,
+		"18": lessons.Structs,
+		"19": lessons.Methods,
+		"20": lessons.Interfaces,
+		"21": lessons.Errors,
+		"22": lessons.Goroutines,
+		"23": lessons.Channels,
+		"24": lessons.ChannelsBuffering,
+		"25": lessons.ChannelsSynchronization,
+	}
+	
+	//for k, v := range lessons {
+	//	runLesson(k, v)
+	//}
+	
+	k := "25"
+	runLesson(k, lessons[k])
 }
 
 func runLesson(number string, call lesson_fn) {
