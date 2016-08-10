@@ -19,6 +19,8 @@ func main() {
 	runLesson("09", lessons.Slices)
 	runLesson("10", lessons.Maps)
 	runLesson("11", lessons.Range)
+	runLesson("12", lessons.Functions)
+	runLesson("13", lessons.MultipleReturnValues)
 }
 
 func runLesson(number string, call lesson_fn) {
