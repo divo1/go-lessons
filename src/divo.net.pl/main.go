@@ -34,13 +34,23 @@ func main() {
 		"23": lessons.Channels,
 		"24": lessons.ChannelsBuffering,
 		"25": lessons.ChannelsSynchronization,
+		"26": lessons.ChannelsDirections,
+		"27": lessons.Select,
+		"28": lessons.Timeouts,
+		"29": lessons.NonBlockingChannelOperations,
+		"30": lessons.ClosingChannels,
+		"31": lessons.RangeOverChannels,
+		"32": lessons.Timers,
+		"33": lessons.Tickers,
+		"34": lessons.WorkerPools,
+		"35": lessons.RateLimiting,
 	}
-	
+
 	//for k, v := range lessons {
 	//	runLesson(k, v)
 	//}
-	
-	k := "25"
+
+	k := "35"
 	runLesson(k, lessons[k])
 }
 
