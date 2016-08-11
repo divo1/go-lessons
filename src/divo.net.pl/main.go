@@ -44,13 +44,18 @@ func main() {
 		"33": lessons.Tickers,
 		"34": lessons.WorkerPools,
 		"35": lessons.RateLimiting,
+		"36": lessons.AtomicCounters,
+		"37": lessons.Mutexes,
+		"38": lessons.StatefulGoroutines,
+		"39": lessons.Sorting,
+		"40": lessons.SortingByFunctions,
 	}
 
 	//for k, v := range lessons {
 	//	runLesson(k, v)
 	//}
 
-	k := "35"
+	k := "38"
 	runLesson(k, lessons[k])
 }
 
