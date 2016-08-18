@@ -49,13 +49,38 @@ func main() {
 		"38": lessons.StatefulGoroutines,
 		"39": lessons.Sorting,
 		"40": lessons.SortingByFunctions,
+		"41": lessons.Panic,
+		"42": lessons.Defer,
+		"43": lessons.CollectionFunctions,
+		"44": lessons.StringFunctions,
+		"45": lessons.StringFormatting,
+		"46": lessons.RegularExpressions,
+		"47": lessons.Json,
+		"48": lessons.Time,
+		"49": lessons.Epoch,
+		"50": lessons.TimeFormattingParsing,
+		"51": lessons.RandomNumbers,
+		"52": lessons.NumberParsing,
+		"53": lessons.URLParsing,
+		"54": lessons.SHA1Hashes,
+		"55": lessons.Base64Encoding,
+		"56": lessons.ReadingFiles,
+		"57": lessons.WritingFiles,
+		"58": lessons.LineFilters,
+		"59": lessons.CommandLineArguments,
+		"60": lessons.CommandLineFlags,
+		"61": lessons.EnvironmentVariables,
+		"62": lessons.SpawningProcesses,
+		"63": lessons.ExecProcesses,
+		"64": lessons.Signals,
+		"65": lessons.Exit,
 	}
 
 	//for k, v := range lessons {
 	//	runLesson(k, v)
 	//}
 
-	k := "38"
+	k := "56"
 	runLesson(k, lessons[k])
 }
 
